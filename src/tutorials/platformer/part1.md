@@ -91,14 +91,13 @@ clone it. Switch body type of the copy to `Dynamic`. Now change its sprite textu
 
 Now for the player. As always, let's start by creating a new rigid body, adding a 2D collider to it, and setting its shape to capsule with the following
 parameters - `Begin = 0.0, 0.0` and `End = 0.0, 0.3`. Add a 2D sprite (rectangle) to the rigid body and set its texture to
-`data/characters/adventurer/adventurer-Sheet.png`. Set its uv rect to `(0.0, 0.0, 0.143, 0.091)` to see only one frame.
-We also need a camera, otherwise, we won't see anything. Add it as a child to a player's rigid body. By default, our
+`data/characters/adventurer/adventurer-Sheet.png`. Select the sprite on `Wolrd Viewer`, and go to `Inspector` Set its uv rect to `(0.0, 0.0)` for position and `(0.143, 0.091)` for size to see only one frame.
+We also need a camera, otherwise, we won't see anything. Add it as a child to a player's rigid body. By default, our 
 camera will have a default background, this is not great and let's fix that. Go to `File -> Current Scene Settings`
-and set the `Skybox` property to `Some`. Now go to asset browser and find `data/background/BG.png`, drag'n'drop it to
+and set the `Skybox` property to `Some`. Now go to asset browser and find `data/background/BG.png`, drag'n'drop it to 
 the `Front` field of the `Skybox` property. Don't forget to adjust the far plane distance to something like `20.0` on the
-camera, otherwise, you'll see just a portion of the background image. If everything is done correctly, you should get
-something like this:
- 
+camera, otherwise, you'll see just a portion of the background image. If everything is done correctly, you should get something like this:
+
 ![editor_step5](editor_step5.png)
 
 Save your scene by goint to `File -> Save Scene`. Now we can run the game using the `Play/Stop` button at the top of the 
