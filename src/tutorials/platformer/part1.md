@@ -96,7 +96,9 @@ We also need a camera, otherwise, we won't see anything. Add it as a child to a 
 camera will have a default background, this is not great and let's fix that. Go to `File -> Current Scene Settings`
 and set the `Skybox` property to `Some`. Now go to asset browser and find `data/background/BG.png`, drag'n'drop it to 
 the `Front` field of the `Skybox` property. Don't forget to adjust the far plane distance to something like `20.0` on the
-camera, otherwise, you'll see just a portion of the background image. If everything is done correctly, you should get something like this:
+camera, otherwise, you'll see just a portion of the background image. If everything is done correctly, you should get 
+
+something like this:
 
 ![editor_step5](editor_step5.png)
 
